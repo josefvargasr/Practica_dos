@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Nota Final</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="introd">Ingrese en las casillas la nota correspondiente</string>
+    <string name="quices">Quices</string>
+    <string name="equices">15%</string>
+    <string name="expo">Exposiciones</string>
+    <string name="eexpo">10%</string>
+    <string name="practicas">Practicas</string>
+    <string name="epracticas">40%</string>
+    <string name="proyecto">Proyecto final</string>
+    <string name="eproyecto">35%</string>
+    <string name="promediar">Promediar</string>
+    <string name="nota">Nota final</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

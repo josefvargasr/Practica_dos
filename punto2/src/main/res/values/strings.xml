@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calcular Operaciones</string>
+    <string name="introd">Ingrese dos numeros y luego elija que operacion desea realizar</string>
+    <string name="op1">Operando 1</string>
+    <string name="eop1">Ingrese operando 1</string>
+    <string name="op2">Operando 2</string>
+    <string name="eop2">Ingrese operando 2</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="mult">Multiplicacion</string>
+    <string name="div">Division</string>
+    <string name="boton1">Calcular</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
+
+
+
