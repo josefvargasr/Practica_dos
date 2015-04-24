@@ -129,7 +129,7 @@ public class MainActivity extends ActionBarActivity {
             phone.setText(telefono.getText());
             mail.setText(correo.getText());
             ciudad.setText(String.valueOf(ciudades.getSelectedItem()));
-            fecha.setText(dpResult.getDayOfMonth()+"-"+dpResult.getMonth()+"-"+dpResult.getYear());
+            fecha.setText(dpResult.getDayOfMonth()+"-"+(dpResult.getMonth()+1)+"-"+dpResult.getYear());
             switch (sex) {
                 case 1:
                     sexo.setText("Femenino");
@@ -166,6 +166,8 @@ public class MainActivity extends ActionBarActivity {
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==0 && hob[3]==0){
                 hobbie.setText("Tocar guitarra\nPintar");
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==0 && hob[3]==1){
+                hobbie.setText("Tocar guitarra\nPintar\nCantar");
+            }else if(hob[0]==1 && hob[1]==1 && hob[2]==1 && hob[3]==0){
                 hobbie.setText("Tocar guitarra\nPintar\nProgramar");
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==1 && hob[3]==1){
                 hobbie.setText("Tocar guitarra\nPintar\nProgramar\nCantar");
