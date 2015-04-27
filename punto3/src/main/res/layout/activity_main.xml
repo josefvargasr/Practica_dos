@@ -1,19 +1,23 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
@@ -22,45 +26,48 @@
             android:layout_marginBottom="20dp"
             android:textColor="@color/red"/>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="225dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/quices"
+                android:layout_weight="1"
                 android:textSize="25dp"
                 android:textColor="@color/blue"/>
 
             <EditText
-                android:layout_width="50dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/equices"
                 android:gravity="center"
+                android:layout_weight="4"
                 android:id="@+id/equices"
                 android:inputType="numberDecimal"
-                android:textSize="20dp" />
-
+                android:textSize="20sp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="225dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/expo"
                 android:textSize="25dp"
                 android:textColor="@color/blue"/>
 
             <EditText
-                android:layout_width="50dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
                 android:hint="@string/eexpo"
                 android:gravity="center"
                 android:id="@+id/eexpo"
@@ -70,20 +77,22 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="225dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/practicas"
                 android:textSize="25dp"
                 android:textColor="@color/blue"/>
 
             <EditText
-                android:layout_width="50dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="4"
                 android:hint="@string/epracticas"
                 android:gravity="center"
                 android:id="@+id/epracticas"
@@ -93,21 +102,23 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="225dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/proyecto"
                 android:textSize="25sp"
                 android:textColor="@color/blue"/>
 
             <EditText
-                android:layout_width="50dp"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/eproyecto"
+                android:layout_weight="4"
                 android:gravity="center"
                 android:id="@+id/eproyecto"
                 android:inputType="numberDecimal"
@@ -136,4 +147,4 @@
     </LinearLayout>
 
 </RelativeLayout>
-
+</ScrollView>

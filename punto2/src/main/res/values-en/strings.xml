@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Math Operations</string>
+    <string name="introd">Enter two numbers and then choose which operation you want to perform</string>
+    <string name="op1">Operand 1</string>
+    <string name="eop1">Enter operand 1</string>
+    <string name="op2">Operand 2</string>
+    <string name="eop2">Enter operand 2</string>
+    <string name="suma">Sum</string>
+    <string name="resta">Subtraction</string>
+    <string name="mult">Multiplication</string>
+    <string name="div">Division</string>
+    <string name="boton1">Calaculate</string>
+    <string name="campos">Fill in missing fields!</string>
+
+
+    <string name="action_settings">Settings</string>
+</resources>

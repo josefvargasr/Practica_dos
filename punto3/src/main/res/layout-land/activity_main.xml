@@ -1,0 +1,171 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/introd"
+            style="@style/text_view_style"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/quices"
+                    style="@style/text_view_style"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/equices"
+                    android:gravity="center"
+                    android:id="@+id/equices"
+                    android:inputType="numberDecimal"
+                    android:layout_marginRight="10dp"
+                    style="@style/text_view_style"
+                    android:layout_weight="2"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expo"
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_view_style"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/eexpo"
+                    android:gravity="center"
+                    android:id="@+id/eexpo"
+                    android:layout_weight="2"
+                    android:inputType="numberDecimal"
+                    style="@style/text_view_style"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/practicas"
+                    style="@style/text_view_style"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/epracticas"
+                    android:gravity="center"
+                    android:id="@+id/epracticas"
+                    android:layout_weight="2"
+                    android:layout_marginRight="10dp"
+                    android:inputType="numberDecimal"
+                    style="@style/text_view_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/proyecto"
+
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_view_style"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/eproyecto"
+                    android:gravity="center"
+                    android:id="@+id/eproyecto"
+                    android:inputType="numberDecimal"
+                    style="@style/text_view_style"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            style="@style/text_view_style"
+            android:text="@string/promediar"
+            android:id="@+id/bpromediar"
+            android:textColor="@color/black"
+            android:onClick="promedio"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_view_style"
+            android:layout_marginTop="10dp"
+            android:text="@string/nota"
+            android:textColor="@color/goldenrod"
+            android:id="@+id/tnota"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"
+            android:textSize="70sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

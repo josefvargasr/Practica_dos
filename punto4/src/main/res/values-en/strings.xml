@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Figures area</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bsiguiente">Next</string>
+    <string name="introd">Select the figure you want to find the area</string>
+    <string name="cuadro">Square</string>
+    <string name="area">Area</string>
+    <string name="triangulo">Triangle</string>
+    <string name="rectangulo">Rectangle</string>
+    <string name="circulo">Circle</string>
+    <string name="bcalcular">Calculate</string>
+    <string name="radio">Radius</string>
+    <string name="tradio">r</string>
+    <string name="base">Base</string>
+    <string name="tbase">b</string>
+    <string name="altura">Height</string>
+    <string name="taltura">h</string>
+    <string name="lado">Side</string>
+    <string name="lado1">Side 1</string>
+    <string name="lado2">Side 2</string>
+    <string name="tlado">a</string>
+    <string name="bagain">Back</string>
+
+</resources>

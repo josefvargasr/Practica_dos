@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Final Note</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="introd">Enter in the boxes the corresponding note</string>
+    <string name="quices">Quizzes</string>
+    <string name="equices">15%</string>
+    <string name="expo">Expositions</string>
+    <string name="eexpo">10%</string>
+    <string name="practicas">Practices</string>
+    <string name="epracticas">40%</string>
+    <string name="proyecto">Final proyect</string>
+    <string name="eproyecto">35%</string>
+    <string name="promediar">Average</string>
+    <string name="nota">Final note</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
