@@ -4,6 +4,7 @@
     <string name="hello_world">Hello world!</string>
 
     <string name="introd">Enter in the boxes the corresponding note</string>
+    <string name="pintrod">Enter in the boxes the percent corresponding note</string>
     <string name="quices">Quizzes</string>
     <string name="equices">15%</string>
     <string name="expo">Expositions</string>
@@ -14,6 +15,14 @@
     <string name="eproyecto">35%</string>
     <string name="promediar">Average</string>
     <string name="nota">Final note</string>
+    <string name="toastoncreate">onCreate</string>
+    <string name="toastcampos">Fill in missing fields!</string>
+    <string name="toastmayor5">Notes can not be larger than 5!</string>
+    <string name="about">Application to calculate the course notes Applications for mobile devices.</string>
+    <string name="babout">About</string>
+    <string name="bsetporcentaje">Acept</string>
+    <string name="configNotas">Configure notes percent</string>
+
 
     <string name="action_settings">Settings</string>
 </resources>

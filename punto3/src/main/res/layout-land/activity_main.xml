@@ -153,15 +153,15 @@
             android:textColor="@color/black"
             android:onClick="promedio"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            style="@style/text_view_style"
             android:layout_marginTop="10dp"
             android:text="@string/nota"
             android:textColor="@color/goldenrod"
             android:id="@+id/tnota"
-            android:inputType="numberDecimal"
+            android:gravity="center"
             android:layout_weight="1"
+            android:inputType="numberDecimal"
             android:textSize="70sp"/>
 
     </LinearLayout>

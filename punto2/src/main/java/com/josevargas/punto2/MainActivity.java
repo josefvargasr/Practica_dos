@@ -42,6 +42,20 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("respuesta", respuesta.getText().toString());
+        outState.putInt("operacion",operacion);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        respuesta.setText(savedInstanceState.getString("respuesta"));
+        operacion=savedInstanceState.getInt("operacion");
+    }
+
     public void onRadioButtonClicked(View view) {
 
         // Is the button now checked?
@@ -73,7 +87,7 @@ public class MainActivity extends ActionBarActivity {
         DecimalFormat df = new DecimalFormat("0.00");
 
         if(TextUtils.isEmpty(op1.getText()) || TextUtils.isEmpty(op2.getText())){
-            Toast.makeText(getBaseContext(), "Faltan campos por llenar!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getResources().getString(R.string.toastcampos), Toast.LENGTH_SHORT).show();
         }else{
             a=Float.parseFloat(op1.getText().toString());
             b=Float.parseFloat(op2.getText().toString());
@@ -104,7 +118,7 @@ public class MainActivity extends ActionBarActivity {
                         respuesta.setText(s);
                         break;
                 default:
-                        Toast.makeText(getBaseContext(), "Escoje la operación!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), getResources().getString(R.string.toastoperacion), Toast.LENGTH_SHORT).show();
                         break;
             }
         }

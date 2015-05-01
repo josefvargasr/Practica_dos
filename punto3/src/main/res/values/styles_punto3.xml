@@ -29,7 +29,8 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_punto3</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_punto3</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Punto3</item>
-
+        
+        
     </style>
 
     <style name="ActionBar.Solid.Punto3" parent="@android:style/Widget.Holo.ActionBar.Solid">

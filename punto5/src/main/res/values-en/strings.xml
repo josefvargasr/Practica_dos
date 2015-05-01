@@ -18,6 +18,7 @@
     <string name="ciudad">City:</string>
     <string name="hobbie">Hobbie:</string>
     <string name="fecha">Birthday:</string>
+    <string name="toastcampos">Fill in missing fields!</string>
 
 
     <string-array name="ciudades">

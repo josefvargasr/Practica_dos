@@ -22,5 +22,7 @@
     <string name="lado2">Lado 2</string>
     <string name="tlado">a</string>
     <string name="bagain">Atras</string>
+    <string name="toastfigura">Escoje la figura!</string>
+    <string name="toastcampos">Faltan campos por llenar!</string>
 
 </resources>

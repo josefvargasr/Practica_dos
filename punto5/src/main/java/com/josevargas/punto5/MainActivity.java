@@ -31,10 +31,6 @@ public class MainActivity extends ActionBarActivity {
     DatePicker dpResult;
     int[] hob = new int[4];
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +58,34 @@ public class MainActivity extends ActionBarActivity {
 
         dpResult = (DatePicker) findViewById(R.id.dpResult);
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("name", name.getText().toString());
+        outState.putString("mail", mail.getText().toString());
+        outState.putString("phone", phone.getText().toString());
+        outState.putString("sexo", sexo.getText().toString());
+        outState.putString("ciudad", ciudad.getText().toString());
+        outState.putString("hobbie", hobbie.getText().toString());
+        outState.putString("fecha", fecha.getText().toString());
+        outState.putInt("sex",sex);
+        outState.putIntArray("hob",hob);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        name.setText(savedInstanceState.getString("name"));
+        mail.setText(savedInstanceState.getString("mail"));
+        phone.setText(savedInstanceState.getString("phone"));
+        sexo.setText(savedInstanceState.getString("sexo"));
+        ciudad.setText(savedInstanceState.getString("ciudad"));
+        hobbie.setText(savedInstanceState.getString("hobbie"));
+        fecha.setText(savedInstanceState.getString("fecha"));
+        sex=savedInstanceState.getInt("operacion");
+        hob=savedInstanceState.getIntArray("hob");
     }
 
     public void radiobutton(View view) {
@@ -123,7 +147,7 @@ public class MainActivity extends ActionBarActivity {
 
         if(TextUtils.isEmpty(nombre.getText()) || TextUtils.isEmpty(telefono.getText()) || TextUtils.isEmpty(correo.getText())
                 || sex==0 || (hob[0]==0 && hob[1]==0 && hob[2]==0 && hob[3]==0)){
-            Toast.makeText(getBaseContext(), "Faltan campos por llenar!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getResources().getString(R.string.toastcampos), Toast.LENGTH_SHORT).show();
         }else{
             name.setText(nombre.getText());
             phone.setText(telefono.getText());
@@ -132,45 +156,45 @@ public class MainActivity extends ActionBarActivity {
             fecha.setText(dpResult.getDayOfMonth()+"-"+(dpResult.getMonth()+1)+"-"+dpResult.getYear());
             switch (sex) {
                 case 1:
-                    sexo.setText("Femenino");
+                    sexo.setText(getResources().getString(R.string.femenino));
                     break;
                 case 2:
-                    sexo.setText("Masculino");
+                    sexo.setText(getResources().getString(R.string.masculino));
                     break;
                 default:
                     break;
             }
 
             if      (hob[0]==0 && hob[1]==0 && hob[2]==0 && hob[3]==1) {
-                hobbie.setText("Cantar");
+                hobbie.setText(getResources().getString(R.string.cantar));
             }else if(hob[0]==0 && hob[1]==0 && hob[2]==1 && hob[3]==0){
-                hobbie.setText("Programar");
+                hobbie.setText(getResources().getString(R.string.programar));
             }else if(hob[0]==0 && hob[1]==0 && hob[2]==1 && hob[3]==1){
-                hobbie.setText("Programar\nCantar");
+                hobbie.setText(getResources().getString(R.string.programar)+"\n"+getResources().getString(R.string.cantar));
             }else if(hob[0]==0 && hob[1]==1 && hob[2]==0 && hob[3]==0){
-                hobbie.setText("Pintar");
+                hobbie.setText(getResources().getString(R.string.pintar));
             }else if(hob[0]==0 && hob[1]==1 && hob[2]==0 && hob[3]==1){
-                hobbie.setText("Pintar\nCantar");
+                hobbie.setText(getResources().getString(R.string.pintar)+"\n"+getResources().getString(R.string.cantar));
             }else if(hob[0]==0 && hob[1]==1 && hob[2]==1 && hob[3]==0){
-                hobbie.setText("Pintar\nProgramaar");
+                hobbie.setText(getResources().getString(R.string.pintar)+"\n"+getResources().getString(R.string.programar));
             }else if(hob[0]==0 && hob[1]==1 && hob[2]==1 && hob[3]==1){
-                hobbie.setText("Pintar\nProgramar\nCantar");
+                hobbie.setText(getResources().getString(R.string.pintar)+"\n"+getResources().getString(R.string.programar)+"\n"+getResources().getString(R.string.cantar));
             }else if(hob[0]==1 && hob[1]==0 && hob[2]==0 && hob[3]==0){
-                hobbie.setText("Tocar guitarra");
+                hobbie.setText(getResources().getString(R.string.guitara));
             }else if(hob[0]==1 && hob[1]==0 && hob[2]==0 && hob[3]==1){
-                hobbie.setText("Tocar guitarra\nCantar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.cantar));
             }else if(hob[0]==1 && hob[1]==0 && hob[2]==1 && hob[3]==0){
-                hobbie.setText("Tocar guitarra\nProgramar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.programar));
             }else if(hob[0]==1 && hob[1]==0 && hob[2]==1 && hob[3]==1){
-                hobbie.setText("Tocar guitarra\nProgramar\nCantar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.programar)+"\n"+getResources().getString(R.string.cantar));
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==0 && hob[3]==0){
-                hobbie.setText("Tocar guitarra\nPintar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.pintar));
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==0 && hob[3]==1){
-                hobbie.setText("Tocar guitarra\nPintar\nCantar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.pintar)+"\n"+getResources().getString(R.string.cantar));
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==1 && hob[3]==0){
-                hobbie.setText("Tocar guitarra\nPintar\nProgramar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.pintar)+"\n"+getResources().getString(R.string.programar));
             }else if(hob[0]==1 && hob[1]==1 && hob[2]==1 && hob[3]==1){
-                hobbie.setText("Tocar guitarra\nPintar\nProgramar\nCantar");
+                hobbie.setText(getResources().getString(R.string.guitara)+"\n"+getResources().getString(R.string.pintar)+"\n"+getResources().getString(R.string.programar)+"\n"+getResources().getString(R.string.cantar));
             }
         }
     }

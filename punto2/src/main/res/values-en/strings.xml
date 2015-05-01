@@ -10,6 +10,8 @@
     <string name="mult">Multiplication</string>
     <string name="div">Division</string>
     <string name="boton1">Calaculate</string>
+    <string name="toastcampos">Fill in missing fields!</string>
+    <string name="toastoperacion">Choose the operation!</string>
     <string name="campos">Fill in missing fields!</string>
 
 

@@ -35,7 +35,7 @@
                     android:layout_weight="5"
                     android:text="@string/nombre"
                     android:textSize="20sp"
-                    android:textColor="@color/red"/>
+                    android:textColor="@color/purple"/>
 
                 <EditText
                     android:layout_width="fill_parent"
@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/telefono"
                         android:layout_weight="5"
-                        android:textColor="@color/red"
+                        android:textColor="@color/purple"
                         android:textSize="20sp"/>
 
                     <EditText
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
                     android:text="@string/correo"
-                    android:textColor="@color/red"
+                    android:textColor="@color/purple"
                     android:textSize="20sp"/>
 
                 <EditText
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
                 android:text="@string/sexo"
-                android:textColor="@color/red"
+                android:textColor="@color/purple"
                 android:textSize="20sp"/>
             <RadioGroup
                 android:layout_width="fill_parent"
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ciudad"
                 android:layout_weight="6"
-                android:textColor="@color/red"
+                android:textColor="@color/purple"
                 android:textSize="20sp"/>
             <Spinner
                 android:layout_width="fill_parent"
@@ -157,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/hobbie"
                 android:layout_weight="6"
-                android:textColor="@color/red"
+                android:textColor="@color/purple"
                 android:textSize="20sp"/>
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -197,7 +197,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fecha"
-                android:textColor="@color/red"
+                android:textColor="@color/purple"
                 android:textSize="20sp"/>
             <DatePicker
                 android:layout_width="wrap_content"
@@ -221,6 +221,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nombre"
+                android:textColor="@color/blueviolet"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:id="@+id/tNombre"
@@ -229,6 +230,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blueviolet"
                 android:text="@string/fecha"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -244,6 +246,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/correo"
                 android:layout_weight="1"
+                android:textColor="@color/blueviolet"
                 android:gravity="center"
                 android:id="@+id/tCorreo"
                 android:layout_gravity="center"
@@ -254,6 +257,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/telefono"
                 android:layout_weight="1"
+                android:textColor="@color/blueviolet"
                 android:gravity="center"
                 android:id="@+id/tTelefono"
                 android:layout_gravity="center"
@@ -267,6 +271,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/sexo"
                 android:gravity="center"
+                android:textColor="@color/blueviolet"
                 android:layout_weight="1"
                 android:id="@+id/tSexo"
                 android:layout_gravity="center"
@@ -276,6 +281,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ciudad"
                 android:gravity="center"
+                android:textColor="@color/blueviolet"
                 android:layout_weight="1"
                 android:id="@+id/tCiudad"
                 android:layout_gravity="center"
@@ -286,6 +292,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/hobbie"
                 android:id="@+id/tHobbie"
+                android:textColor="@color/blueviolet"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textSize="20sp"/>

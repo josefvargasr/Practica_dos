@@ -27,8 +27,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         rcirculo=(RadioButton) findViewById(R.id.rcirculo);
         rtriangulo=(RadioButton) findViewById(R.id.rtriangulo);
         rcaudro=(RadioButton) findViewById(R.id.rcuadro);
@@ -37,8 +35,21 @@ public class MainActivity extends ActionBarActivity {
         bsiguiente=(Button) findViewById(R.id.bsiguiente);
         bcalcular=(Button) findViewById(R.id.bcalcular);
 
+        area=(TextView) findViewById(R.id.tarea);
 
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        outState.putInt("figura",figura);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        figura=savedInstanceState.getInt("figura");
     }
 
     public void radiobutton(View view) {
@@ -70,7 +81,7 @@ public class MainActivity extends ActionBarActivity {
     public void siguiente(View view){
 
         if(figura==0){
-            Toast.makeText(getBaseContext(), "Elija la figura!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getResources().getString(R.string.toastfigura), Toast.LENGTH_SHORT).show();
         }else{
             switch (figura) {
                 case 1:
@@ -111,7 +122,7 @@ public class MainActivity extends ActionBarActivity {
         switch (figura) {
             case 1:
                 if(TextUtils.isEmpty(radio.getText())){
-                    Toast.makeText(getBaseContext(), "Faltan campos por llenar!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), getResources().getString(R.string.toastcampos), Toast.LENGTH_SHORT).show();
                 }else{
                     r=Double.parseDouble(radio.getText().toString());
                     set=Math.PI*Math.pow(r,2);
@@ -122,7 +133,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 2:
                 if(TextUtils.isEmpty(altura.getText()) || TextUtils.isEmpty(base.getText())){
-                    Toast.makeText(getBaseContext(), "Faltan campos por llenar!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), getResources().getString(R.string.toastcampos), Toast.LENGTH_SHORT).show();
                 }else{
                     b=Double.parseDouble(base.getText().toString());
                     h=Double.parseDouble(altura.getText().toString());
@@ -133,7 +144,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 3:
                 if(TextUtils.isEmpty(lado1.getText())){
-                    Toast.makeText(getBaseContext(), "Faltan campos por llenar!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), getResources().getString(R.string.toastcampos), Toast.LENGTH_SHORT).show();
                 }else{
                     l1=Double.parseDouble(lado1.getText().toString());
                     set=l1*l1;
@@ -143,7 +154,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 4:
                 if(TextUtils.isEmpty(lado1.getText()) || TextUtils.isEmpty(lado2.getText())){
-                    Toast.makeText(getBaseContext(), "Faltan campos por llenar!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), getResources().getString(R.string.toastcampos), Toast.LENGTH_SHORT).show();
                 }else{
                     l1=Double.parseDouble(lado1.getText().toString());
                     l2=Double.parseDouble(lado2.getText().toString());

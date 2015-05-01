@@ -18,6 +18,7 @@
     <string name="ciudad">Ciudad:</string>
     <string name="hobbie">Hobbie:</string>
     <string name="fecha">Fecha de nacimiento:</string>
+    <string name="toastcampos">Faltan campos por llenar!</string>
 
 
     <string-array name="ciudades">
